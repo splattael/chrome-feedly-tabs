@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Feedly tabs",
+  "description": "Open Feedly articles in new tabs",
+  "version": "0.0.1",
+  "permissions": [
+    "tabs", "http://www.feedly.com/home*"
+  ],
+  "browser_action": {
+    "default_icon": "images/icon.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  }
+}
