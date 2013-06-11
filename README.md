@@ -20,7 +20,7 @@ See https://chrome.google.com/webstore/detail/feedly-tabs/bbknmbmpegpkeamflgefme
 * code
 * increase version in manifest.json
 * `make zip`
-* Upload `build/feedly-tabs.zip` to https://chrome.google.com/webstore/developer/update
+* Upload `build/feedly-tabs.zip` to https://chrome.google.com/webstore/developer/dashboard
 
 ## Release CRX
 
