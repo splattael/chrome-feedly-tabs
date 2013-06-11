@@ -2,6 +2,12 @@
 
 Open Feedly articles in new tabs.
 
+# Installation
+
+## From Chrome Web Store
+
+See https://chrome.google.com/webstore/detail/feedly-tabs/bbknmbmpegpkeamflgefmekmjjhgddhk
+
 ## Load unpacked extension
 
 * `git clone https://github.com/splattael/chrome-feedly-tabs.git`
