@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Feedly tabs",
   "description": "Open Feedly articles in new tabs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "permissions": [
     "tabs", "http://www.feedly.com/home*"
   ],
