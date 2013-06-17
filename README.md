@@ -29,3 +29,8 @@ Ensure that your private `chromium.pem` is stored in your `$HOME`.
 * code
 * `make crx`
 * Distribute `build/feedly-tabs.crx`
+
+## Ideas
+
+* Configure amount of tabs to open (default 20)
+* Mark article read if tabs is closed or URL has changed
