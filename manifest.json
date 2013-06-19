@@ -4,7 +4,7 @@
   "description": "Open Feedly articles in new tabs",
   "version": "0.0.2",
   "permissions": [
-    "tabs", "http://www.feedly.com/home*"
+    "tabs", "http://*.feedly.com/home*"
   ],
   "browser_action": {
     "default_icon": "images/icon.png"
