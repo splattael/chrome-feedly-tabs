@@ -18,7 +18,8 @@ See https://chrome.google.com/webstore/detail/feedly-tabs/bbknmbmpegpkeamflgefme
 ## Release extension in Chrome Web Store (as ZIP)
 
 * code
-* increase version in manifest.json
+* bump version in manifest.json
+* `git tag vVERSION`
 * `make zip`
 * Upload `build/feedly-tabs.zip` to https://chrome.google.com/webstore/developer/dashboard
 
