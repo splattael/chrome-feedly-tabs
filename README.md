@@ -1,4 +1,4 @@
-# ![Feedly tabs icon](images/icon.png) Feedly tabs
+# ![Feedly tabs icon](images/icon38.png) Feedly tabs
 
 Open Feedly articles in new tabs.
 
