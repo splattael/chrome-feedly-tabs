@@ -22,6 +22,7 @@ See https://chrome.google.com/webstore/detail/feedly-tabs/bbknmbmpegpkeamflgefme
 * code
 * bump version in manifest.json
 * `git tag vVERSION`
+* `git push --tags`
 * `make zip`
 * Upload `build/feedly-tabs.zip` to https://chrome.google.com/webstore/developer/dashboard
 
