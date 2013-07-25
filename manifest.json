@@ -7,15 +7,16 @@
     "48":   "images/icon48.png",
     "128":  "images/icon128.png"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "permissions": [
     "tabs", "http://*.feedly.com/home*"
   ],
-  "browser_action": {
+  "page_action": {
     "default_icon": {
       "19": "images/icon19.png",
       "38": "images/icon38.png"
-    }
+    },
+    "default_title": "Open Feedly articles in new tabs"
   },
   "background": {
     "scripts": ["js/background.js"]
