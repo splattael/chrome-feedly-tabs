@@ -2,7 +2,7 @@
 
 Open Feedly articles in new tabs.
 
-See example usage on [YouTube](http://www.youtube.com/watch?v=_CMg6tK0CMw).
+[![Example usage on YouTube](youtube-splashscreen.jpg)](http://www.youtube.com/watch?v=_CMg6tK0CMw)
 
 # Installation
 
