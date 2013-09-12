@@ -9,7 +9,9 @@
   },
   "version": "0.2.0",
   "permissions": [
-    "tabs", "http://*.feedly.com/home*"
+    "tabs",
+    "http://*.feedly.com/home*",
+    "https://*.feedly.com/home*"
   ],
   "page_action": {
     "default_icon": {
