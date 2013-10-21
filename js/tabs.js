@@ -13,6 +13,7 @@
   }
 
   eachFeedlyUrl(function(url) {
-    chrome.extension.sendMessage({ url: url });
+    var sendMessage = chrome.extension ? chrome.extension.sendMessage : chrome.runtime.sendMessage;
+    sendMessage({ url: url });
   });
 })();
