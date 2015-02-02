@@ -1,4 +1,4 @@
-# ![Feedly tabs icon](images/icon38.png) Feedly tabs
+# ![Feedly tabs icon](images/icon38.png) Feedly tabs for Chrome
 
 Open Feedly articles in new tabs.
 
@@ -38,6 +38,10 @@ Ensure that your private `chromium.pem` is stored in your `$HOME`.
 
 * Configure amount of tabs to open (default 20)
 * Mark article read if tabs is closed or URL has changed
+
+## Firefox version?
+
+See https://github.com/splattael/firefox-feedly-tabs
 
 ## License
 
