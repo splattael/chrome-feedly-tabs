@@ -10,7 +10,7 @@ VERSION=$(shell bin/version)
 all: zip
 
 zip: git-export clean-zip
-	cd ${BUILD_DIR} && zip -r ${BUILD_ZIP} ${EXTENSION_NAME}
+	cd ${BUILD_DIR} && zip -r ${BUILD_ZIP} -x@../.zipexclude ${EXTENSION_NAME}
 
 release:
 	git commit -av -e -m "Release v${VERSION}" && \
