@@ -9,8 +9,10 @@ chrome.pageAction.onClicked.addListener(function(tab) {
  * Show page action on tabs which contains "feedly.com".
  */
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-  if (tab.url.indexOf("feedly.com") > -1) {
-    chrome.pageAction.show(tabId);
+  if (changeInfo.status === "complete") {
+    if (tab.url.indexOf("feedly.com") > -1) {
+      chrome.pageAction.show(tabId);
+    }
   }
 });
 
