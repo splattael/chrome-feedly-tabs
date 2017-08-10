@@ -14,6 +14,6 @@
 
   eachFeedlyUrl(function(url) {
     var sendMessage = chrome.extension ? chrome.extension.sendMessage : chrome.runtime.sendMessage;
-    sendMessage({ url: url });
+    sendMessage({ showTab: url });
   });
 })();

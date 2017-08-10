@@ -9,10 +9,9 @@ chrome.pageAction.onClicked.addListener(function(tab) {
  * Show page action on tabs which contains "feedly.com".
  */
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-  if (changeInfo.status === "complete") {
-    if (tab.url.indexOf("feedly.com") > -1) {
-      chrome.pageAction.show(tabId);
-    }
+  if (tab.url.indexOf("feedly.com") > -1) {
+    chrome.pageAction.show(tabId);
+    chrome.tabs.sendMessage(tabId, {updated: true}, function(response) {})
   }
 });
 
@@ -22,5 +21,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
  * @params request.url - The URL to be opened in tab.
  */
 chrome.extension.onMessage.addListener(function(request, sender, response) {
-  chrome.tabs.create({ url: request.url, active: false });
+  if (request.showTab) {
+    chrome.tabs.create({ url: request.showTab, active: false });
+  } else if (request.showAll) {
+    chrome.tabs.executeScript(null, { file: "js/tabs.js" });
+  }
 });

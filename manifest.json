@@ -20,6 +20,12 @@
     },
     "default_title": "Open Feedly articles in new tabs"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://feedly.com/*"],
+      "js": ["js/inject_action_button.js"]
+    }
+  ],
   "background": {
     "scripts": ["js/background.js"]
   }
