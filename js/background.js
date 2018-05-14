@@ -1,17 +1,17 @@
 /**
  * Execute tabs.js in context of current tab.
  */
-chrome.pageAction.onClicked.addListener(function(tab) {
-  chrome.tabs.executeScript(null, { file: "js/tabs.js" });
+browser.pageAction.onClicked.addListener(function(tab) {
+  browser.tabs.executeScript(null, { file: "js/tabs.js" });
 });
 
 /**
  * Show page action on tabs which contains "feedly.com".
  */
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+browser.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
   if (tab.url.indexOf("feedly.com") > -1) {
-    chrome.pageAction.show(tabId);
-    chrome.tabs.sendMessage(tabId, {updated: true}, function(response) {})
+    browser.pageAction.show(tabId);
+    browser.tabs.sendMessage(tabId, {updated: true}, function(response) {})
   }
 });
 
@@ -20,10 +20,10 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
  *
  * @params request.url - The URL to be opened in tab.
  */
-chrome.extension.onMessage.addListener(function(request, sender, response) {
+browser.runtime.onMessage.addListener(function(request, sender, response) {
   if (request.showTab) {
-    chrome.tabs.create({ url: request.showTab, active: false });
+    browser.tabs.create({ url: request.showTab, active: false });
   } else if (request.showAll) {
-    chrome.tabs.executeScript(null, { file: "js/tabs.js" });
+    browser.tabs.executeScript(null, { file: "js/tabs.js" });
   }
 });
