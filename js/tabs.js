@@ -13,7 +13,7 @@
   }
 
   eachFeedlyUrl(function(url) {
-    var sendMessage = chrome.extension ? chrome.extension.sendMessage : chrome.runtime.sendMessage;
+    var sendMessage = browser.runtime ? browser.runtime.sendMessage : browser.runtime.sendMessage;
     sendMessage({ showTab: url });
   });
 })();
