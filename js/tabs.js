@@ -13,7 +13,6 @@
   }
 
   eachFeedlyUrl(function(url) {
-    var sendMessage = browser.runtime ? browser.runtime.sendMessage : browser.runtime.sendMessage;
-    sendMessage({ showTab: url });
+    browser.runtime.sendMessage({ showTab: url });
   });
 })();
