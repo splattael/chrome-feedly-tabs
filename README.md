@@ -1,6 +1,6 @@
 # ![Feedly tabs icon](images/icon38.png) Feedly tabs for Firefox
 
-##Firefox Fork
+## Firefox Fork
 
 This is a novice port of the Feedly tabs browser-extension from Chrome to Firefox Quantum (FFQ). Since the old Firefox version of Feedly tabs isn't compatible with FFQ and overall compatibility between Chrome and FFQ is very high, it made sense to just adapt the newer Chrome version.
 
