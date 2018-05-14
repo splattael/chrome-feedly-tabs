@@ -1,46 +1,15 @@
-# ![Feedly tabs icon](images/icon38.png) Feedly tabs for Chrome
+# ![Feedly tabs icon](images/icon38.png) Feedly tabs for Firefox
 
-Open Feedly articles in new tabs.
+##Firefox Fork
 
-[![Example usage on YouTube](youtube-splashscreen.jpg)](http://www.youtube.com/watch?v=_CMg6tK0CMw)
+This is a novice port of the Feedly tabs browser-extension from Chrome to Firefox Quantum (FFQ). Since the old Firefox version of Feedly tabs isn't compatible with FFQ and overall compatibility between Chrome and FFQ is very high, it made sense to just adapt the newer Chrome version.
 
-# Installation
+For now, this underwent almost no testing. Basic functionality (open read later items in new tabs) worked like expected.
+I hope this can find its way in the official Firefox add-on repository. *
 
-## From Chrome Web Store
 
-See https://chrome.google.com/webstore/detail/feedly-tabs/bbknmbmpegpkeamflgefmekmjjhgddhk
+*respectfully I will try to contact splattael about that; if without success the MIT licence does allow to submit it as a third party
 
-## Load unpacked extension
-
-* `git clone https://github.com/splattael/chrome-feedly-tabs.git`
-* Open Chrome with `chrome://extensions/`
-* Tick "Developer mode" (upper right hand)
-* "Load unpacked extension..." and select `chrome-feedly-tabs` path
-
-## Release extension in Chrome Web Store (as ZIP)
-
-* code
-* bump version in manifest.json
-* `make release`
-* `make zip`
-* Upload `build/feedly-tabs.zip` to https://chrome.google.com/webstore/developer/dashboard
-
-## Release CRX
-
-Ensure that your private `chromium.pem` is stored in your `$HOME`.
-
-* code
-* `make crx`
-* Distribute `build/feedly-tabs.crx`
-
-## Ideas
-
-* Configure amount of tabs to open (default 20)
-* Mark article read if tabs is closed or URL has changed
-
-## Firefox version?
-
-See https://github.com/splattael/firefox-feedly-tabs
 
 ## License
 
