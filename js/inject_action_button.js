@@ -33,10 +33,10 @@ var feedlyTabs = (function() {
   };
 })();
 
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.updated) {
     feedlyTabs.run(document, function(e) {
-      chrome.runtime.sendMessage({showAll: true});
+      browser.runtime.sendMessage({showAll: true});
     });
   }
 });
