@@ -1,4 +1,4 @@
-# ![Feedly tabs icon](images/icon38.png) Feedly tabs for Firefox
+# ![Feedly tabs icon](images/icon38.png) Feedly tabs Q for Firefox
 
 ## Firefox Fork
 
@@ -7,9 +7,8 @@ This is a novice port of the Feedly tabs browser-extension from Chrome to Firefo
 For now, this underwent almost no testing. Basic functionality (open read later items in new tabs) worked like expected.
 I hope this can find its way in the official Firefox add-on repository. *
 
-
-*respectfully I will try to contact splattael about that; if without success the MIT licence does allow to submit it as a third party
-
+## As ADD-ON from addons.mozilla.org
+https://addons.mozilla.org/en-US/firefox/addon/feedly-tabs-q/?src=search
 
 ## License
 
